@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            background-color: rgb(212,181,178);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+
+        header{
+            width: 72.5%;
+            margin:auto;
+        }
+
+        h2 li {
+            list-style: circle;
+            padding-top: 0.7em;
+        }
+
+        hr{
+            border-top: 1px solid #d12f52;
+          }
+
+        .navigacio {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+        }
+
+        .menuikon {
+            display: none;
+        }
+
+        #kontener{
+            padding-top: 6em;
+            width: 75%;
+            margin:auto;
+        }
+
+        #kapcs{
+            float:left;
+            width: 50%;
+            text-align: center;
+            color: rgb(255,236,201);
+            font-size: 1.2rem;
+        }
+
+        #elerhetosegek{
+            text-align: left;
+            color: rgb(255,236,201);
+        }
+
+        #kezdolap {
+            width: 60%;
+            height: 50%;
+            margin:auto;
+            margin-top: 7em;
+            overflow: hidden;
+            
+        }
+
+
+        #negyzetek{
+            float:left;
+            text-align: center;
+            width: 50%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.5s;
+            background-color: rgb(212,181,178);
+            color: rgb(255,236,201);
+            font-size: 20px;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+
+        #negyzetek:hover{
+            transition: background-color 0.8s;
+            background-color: rgba(201, 150, 147, 0.75);
+            border-radius: 20px;
+            font-size: 22px;
+            color: rgb(228, 212, 184);
+        }
+
+        .ikonvonal {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: rgb(255,236,201);
+        }
+
+        .navigacio-menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navigacio-elem {
+            margin-left: 2rem;
+        }
+        
+        .navigacio-link{
+            font-size: 0.85rem;
+            font-weight: bolder;
+            color: rgb(255,236,201);
+        }
+        
+        .navigacio-link:hover{
+            color: #d12f52;
+            text-decoration: underline;
+        }
+
+        .navigacio-cim {
+            font-size: 2.45rem;
+            color: rgb(255,236,201);
+            font-family: 'Fredericka the Great', cursive;
+        }
+
+        h1 {
+            color:rgb(255,236,201);
+            padding-top: 2rem;;
+            font-size: 3.5rem;
+            text-align: center;
+        }
+
+        h2 {
+            color:rgb(255,236,201);
+            padding-top: 2em;
+            padding-bottom: 3em;
+            font-size: 1.2em;
+            text-align: justify;
+            margin: auto;
+            width: 70%;
+            font-weight: lighter;
+        }
+
+        form{
+            color:rgb(255,236,201);
+            padding-top: 2em;
+            font-size: 1.2rem;
+        }
+
+        .kepek {
+            color:rgb(255,236,201);
+            font-size: 1.2em;
+            text-align: center;
+            margin: auto;
+            width: 70%;
+            padding-bottom: 4rem;
+        }
+
+        .kepek img{
+            border-radius: 50%;
+            width:50%;
+            height:auto;
+            padding: 1rem;
+            filter: grayscale(100%);
+            transform: scale(0.8);
+            transition: .3s ease-in-out;
+        }
+
+        .kepek img:hover{
+            border-radius: 0%;
+            width:50%;
+            height:auto;
+            filter: grayscale(0);
+            padding: 1rem;
+            transition: .8s ease-in-out;
+            transform: scale(1);
+        }
+
+        @media only screen and (max-width: 720px) {
+            .navigacio-menu {
+                position: fixed;
+                left: -100%;
+                top: 5rem;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                background-color: #DDAF94;
+                box-shadow: rgb(128, 125, 125);
+            }
+        
+            .navigacio-menu.active {
+                left: 0;
+            }
+        
+            .navigacio-elem {
+                margin: 2.5rem 0;
+            }
+        
+            .menuikon {
+                display: block;
+                cursor: pointer;
+                overflow: hidden;
+            }
+
+            .legordulo{
+                display: none;
+                position: absolute;
+                background-color: rgb(201, 151, 147);
+                color:rgb(255,236,201);
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                border-radius: 5%;
+                padding: 1rem;
+            }
+
+            .legordulo a{
+                display: block;
+                font-size: 1.6rem;
+            }
+        
+            
+            .menuikon:hover .legordulo{
+                display: block;
+                transform: translateX(-75%)
+            }
+
+            #kapcs{
+                padding-right: 10px;
+            }
+
+            #negyzetek{
+                float:left;
+                text-align: center;
+                width: 50%;
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: rgb(255,236,201);
+                font-size: 16px;
+            }
+            
+            #negyzetek:hover{
+                font-size: 16px;
+            }
+        }       
+    

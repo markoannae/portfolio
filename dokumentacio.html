@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="oldalstilus.css">
+    <title>Markó Anna portfólió oldala - Dokumentáció</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navigacio">
+            <a href="index.html" class="navigacio-cim">Markó Anna portfólió</a>
+            <ul class="navigacio-menu">
+                <li class="navigacio-elem">
+                    <a href="bemutatkozas.html" class="navigacio-link">Bemutatkozás</a>
+                </li>
+                <li class="navigacio-elem">
+                    <a href="kepek.html" class="navigacio-link">Képek</a>
+                </li>
+                <li class="navigacio-elem">
+                    <a href="kapcsolat.html" class="navigacio-link">Kapcsolat</a>
+                </li>
+                <li class="navigacio-elem">
+                    <a href="#" class="navigacio-link">Dokumentáció</a>
+                </li>
+            </ul>
+            <div class="menuikon">
+                <span class="ikonvonal"></span>
+                <span class="ikonvonal"></span>
+                <span class="ikonvonal"></span>
+                <div class="legordulo">
+                    <a href="bemutatkozas.html" class="navigacio-link">Bemutatkozás</a><hr>
+                    <a href="kepek.html" class="navigacio-link">Képek</a><hr>
+                    <a href="kapcsolat.html" class="navigacio-link">Kapcsolat</a><hr>
+                    <a href="#" class="navigacio-link">Dokumentáció</a>
+                  </div>
+            </div>
+        </nav>
+
+</header>
+<h1 style="font-size:30px">Dokumentáció</h1>
+
+<h2 style="font-size:25px">A feladat elkészítése során az alábbi problémákba ütköztem:</h2>
+
+<h2>A responsive menü létrehozásakor a menü nem a kellő pillanatban váltott a menü ikonra.
+    <br><br>Megoldás: 
+    <br>A menü elemei közti távolság lecsökkentése 4rem nagyságról 2rem nagyságra.<br><br>
+    A responsive szöveg létrehozásakor a szöveg sorait nem tördelte a böngésző.
+    <br><br>Megoldás: <br>
+    A problémát az okozta, hogy a 'width' értékét rem-ben adtam meg, miután százalékos értéket vettem fel rá, a probléma megoldódott.<br><br>
+    A 'Kapcsolat' menüpontban a szöveg és a kép egymásra folyt.
+    <br><br>Megoldás: <br>
+    A kép megjelenítésénél hozzáadtam a "style="max-width:100%;height:auto;" kiegészítést, továbbá a CSS fájlban a kicsinyített esethez a "padding-right: 10px;" kiegészítést.
+     Így a kép mérete mindig arányosan csökken, ha szükséges, továbbá lesz egy kis kihagyott terület a kép és a szöveg között.<br><br>
+    A Google egyéni fontját nem olvasta be a kód.<br><br>Megoldás: <br>A font linkjét rossz helyre írtam, keresés után találtam rá arra a megoldásra, amit aztán
+     a CSS fájlban alkalmaztam.<br><br>
+    Nem az általam kivánt kinézetet vette fel a program, több esetben sem.<br><br>Megoldás: <br>Különböző megoldásokkal próbálkoztam, 
+    paraméterek átírásával, valamint rákerestem az interneten az adott problémára és ezekből az információkból sikerült az oldalt a kívánt kinézetűre módosítani.<br><br></h2>
+
+<h2 style="font-size:25px">A feladat elkészítése során az alábbi forrásokat használtam fel:</h2>
+
+<h2><a href="https://dev.to/">https://dev.to/</a><br>
+    <a href="https://fonts.google.com/specimen/Montserrat">https://fonts.google.com/</a><br>
+    <a href="https://www.w3schools.com/">https://www.w3schools.com/</a><br>
+    <a href="https://css-tricks.com/">https://css-tricks.com/</a><br>
+    <a href="https://stackoverflow.com/">https://stackoverflow.com/</a><br><br>
+</h2>
+
+<h2 style="font-size:25px">A feladat grafikai terve:</h2>
+<h2>A feladat során tartottam magam az eredeti elképzelésemhez az oldal felépítéséről, jól kivehető, 
+    hogy egy állandó szélességarányú menüsort és tartalmat szerettem volna, amely a kezdőoldalon kívül mindenhol megegyezik. 
+    Viszont amennyiben kicsinyítjük az ablakot, a menüpontok helyét egy menüikon veszi át, és a menüpontok legördülő menüben jelennek meg. 
+    A kivitelezés során több színkombinációt is kipróbáltam, majd az oldalon láthatóra esett a választásom, mivel letisztult, egyszerű, de szép kombinációt szerettem volna, és ezt 
+    ez a színkombináció teljesíti. 
+    Az alábbi képen látható a grafikai terv: <br></h2>
+    <h2 style="text-align: center;"><img src="grafika.jpg" style="max-width:80%;height:60%;width:60%;"></h2>
+    <h2 style="font-size:25px">Egyéb megjegyzések:</h2>  
+    <h2>A kapcsolat menüben az üzenetküldő panel nem működik, a fejlesztés esetleg a későbbiekben lehetséges.</h2>
+</body>
+</html>
